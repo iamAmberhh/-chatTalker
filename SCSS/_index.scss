@@ -14,7 +14,7 @@ body{
     font-family:  'Comfortaa', cursive;
 }
 h1{
-    background: url(images/logo.svg) no-repeat;
+    background: url('/images/logo.svg') no-repeat;
     width:220px;
     height:40px;
     text-indent: 105%;
@@ -141,7 +141,7 @@ h1{
 }
 
 .bg-decorate-md{
-    background:url(images/ball02.svg) no-repeat;
+    background:url('/images/ball02.svg') no-repeat;
     width:315px;
     height:320px;
     bottom:-20px;
@@ -149,7 +149,7 @@ h1{
 }
 
 .bg-decorate-sm{
-    background:url(images/ball03.svg) no-repeat;
+    background:url('/images/ball03.svg') no-repeat;
     width:155px;
     height:155px;
     top:20px;
