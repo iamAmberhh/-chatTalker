@@ -1,0 +1,240 @@
+body{
+    font-family:'Noto Sans TC', sans-serif;
+    max-width: 1366px;
+    margin:0 auto;
+    position: relative;
+}
+.font-wendy{
+    font-family:'Wendy One', sans-serif;
+}
+.font-bebas{
+    font-family:'Bebas Neue', cursive;
+}
+.font-comfortaa{
+    font-family:  'Comfortaa', cursive;
+}
+h1{
+    background: url(/chatTalker_images/logo.svg) no-repeat;
+    width:220px;
+    height:40px;
+    text-indent: 105%;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.neg-index{
+    z-index:-1;
+}
+.mb-max{
+    margin-bottom: 100px;
+}
+@media(max-width: 576px){
+    .mb-max{
+        margin-bottom: 60px;
+    }
+}
+
+.top-btn{
+    position:fixed;
+    right:48px;
+    top:500px;
+    z-index:3;
+    width:70px;
+    height:70px;
+    padding:20px 10px;
+}
+@media(max-width: 768px){
+    .top-btn{
+    right:16px;
+    top:900px;
+    width:50px;
+    height:50px;
+    padding:15px 0px;
+    }
+}
+@media(max-width: 576px){
+    .top-btn{
+    right:16px;
+    top:600px;
+    width:50px;
+    height:50px;
+    padding:15px 0px;
+    }
+}
+
+
+// index page
+
+.home-bg{
+    background:url(/chatTalker_images/bg_home.svg) no-repeat;
+    width:851px;
+    height:768px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+@media(max-width: 576px){
+    .home-bg{
+        background:url(/chatTalker_images/bg_home_sm.svg) no-repeat;
+        width:450px;
+        height:450px;
+        position: absolute;
+        top:400px;
+        left:10px;
+        right:10px;
+    }
+}
+@media(max-width: 400px){
+    .home-bg{
+        background:url(/chatTalker_images/bg_home_sm.svg) no-repeat;
+        width:450px;
+        height:450px;
+        position: absolute;
+        top:350px;
+        left:10px;
+        right:10px;
+    }
+}
+
+
+.circle-icon{
+    width:86px;
+    height:86px;
+}
+.upper-shot{
+    width:80px;
+    height:80px;
+    position:absolute;
+    top:-50px;
+    left:32px;
+}
+
+.footer-banner{
+    height:503px;
+}
+
+@media(max-width: 576px){
+    .footer-banner{
+        height:461px;
+    }
+}
+
+.bg-decorate-lg{
+    background:url(/chatTalker_images/ball01.svg) no-repeat;
+    width:365px;
+    height:366px;
+    top:-10px;
+    transform: translateX(-350px);
+}
+
+@media(max-width: 576px){
+    .bg-decorate-lg{
+        transform: translateX(-150px);
+    }
+}
+
+@media(max-width: 400px){
+    .bg-decorate-lg{
+        transform: translateX(-300px);
+    }
+}
+
+.bg-decorate-md{
+    background:url(/chatTalker_images/ball02.svg) no-repeat;
+    width:315px;
+    height:320px;
+    bottom:-20px;
+    right:-120px;
+}
+
+.bg-decorate-sm{
+    background:url(/chatTalker_images/ball03.svg) no-repeat;
+    width:155px;
+    height:155px;
+    top:20px;
+    transform: translateX(-90px);
+}
+
+
+// charge page
+
+.charge-title{
+    margin-bottom: 280px;
+}
+
+@media(max-width: 576px){
+    .charge-title{
+        margin-bottom: 420px;
+    }
+}
+
+
+.round-bg{
+    background-color: #F7F9FD;
+    border-radius: 0 0 0 300px;
+    width:1366px;
+    height:470px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-5;
+}
+
+@media(max-width: 768px){
+    .round-bg{
+        width:768px;
+        height:495px;
+        top:0;
+    }
+}
+@media(max-width: 576px){
+    .round-bg{
+        width:576px;
+        height:495px;
+        top:88px;
+    }
+}
+
+.charge-bg{
+    background:url(/chatTalker_images/banner.svg) no-repeat;
+    width:885px;
+    height:559px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+@media(max-width: 576px){
+    .charge-bg{
+        background:url(/chatTalker_images/banner_sm.svg) no-repeat;
+        width:375px;
+        height:495px;
+        position: absolute;
+        top:88px;
+        left:0;
+        right:0;
+    }
+}
+
+.bg-decorate{
+    background:url(/chatTalker_images/ball03.svg) no-repeat;
+    width:360px;
+    height:360px;
+    top:20px;
+    transform: translateX(-250px);
+}
+
+@media(max-width: 768px){
+    .bg-decorate{
+        top:350px;
+        transform: translateX(-150px);
+    }
+}
+
+.charge-btn:hover{
+    color:white;
+}
+.charge-btn.active{
+    color:white;
+}
