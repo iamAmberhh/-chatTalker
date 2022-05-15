@@ -11495,7 +11495,7 @@ body {
 }
 
 h1, .h1 {
-  background: url("/images/logo.svg") no-repeat;
+  background: url(../images/logo.svg) no-repeat;
   width: 220px;
   height: 40px;
   text-indent: 105%;
@@ -11549,7 +11549,7 @@ h1, .h1 {
 }
 
 .home-bg {
-  background: url(images/bg_home.svg) no-repeat;
+  background: url(../images/bg_home.svg) no-repeat;
   width: 851px;
   height: 768px;
   position: absolute;
@@ -11559,7 +11559,7 @@ h1, .h1 {
 
 @media (max-width: 576px) {
   .home-bg {
-    background: url(images/bg_home_sm.svg) no-repeat;
+    background: url(../images/bg_home_sm.svg) no-repeat;
     width: 450px;
     height: 450px;
     position: absolute;
@@ -11571,7 +11571,7 @@ h1, .h1 {
 
 @media (max-width: 400px) {
   .home-bg {
-    background: url(images/bg_home_sm.svg) no-repeat;
+    background: url(../images/bg_home_sm.svg) no-repeat;
     width: 450px;
     height: 450px;
     position: absolute;
@@ -11605,7 +11605,7 @@ h1, .h1 {
 }
 
 .bg-decorate-lg {
-  background: url(images/ball01.svg) no-repeat;
+  background: url(../images/ball01.svg) no-repeat;
   width: 365px;
   height: 366px;
   top: -10px;
@@ -11628,7 +11628,7 @@ h1, .h1 {
 }
 
 .bg-decorate-md {
-  background: url("/images/ball02.svg") no-repeat;
+  background: url(../images/ball02.svg) no-repeat;
   width: 315px;
   height: 320px;
   bottom: -20px;
@@ -11636,7 +11636,7 @@ h1, .h1 {
 }
 
 .bg-decorate-sm {
-  background: url("/images/ball03.svg") no-repeat;
+  background: url(../images/ball03.svg) no-repeat;
   width: 155px;
   height: 155px;
   top: 20px;
@@ -11682,7 +11682,7 @@ h1, .h1 {
 }
 
 .charge-bg {
-  background: url(images/banner.svg) no-repeat;
+  background: url(../images/banner.svg) no-repeat;
   width: 885px;
   height: 559px;
   position: absolute;
@@ -11692,7 +11692,7 @@ h1, .h1 {
 
 @media (max-width: 576px) {
   .charge-bg {
-    background: url(images/banner_sm.svg) no-repeat;
+    background: url(../images/banner_sm.svg) no-repeat;
     width: 375px;
     height: 495px;
     position: absolute;
@@ -11703,7 +11703,7 @@ h1, .h1 {
 }
 
 .bg-decorate {
-  background: url(images/ball03.svg) no-repeat;
+  background: url(../images/ball03.svg) no-repeat;
   width: 360px;
   height: 360px;
   top: 20px;
