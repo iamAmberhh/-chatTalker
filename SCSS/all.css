@@ -26,7 +26,7 @@
   --bs-danger: #FF5D50;
   --bs-light: #F5F5F5;
   --bs-dark: #747474;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Noto Sans TC", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -625,7 +625,7 @@ progress {
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 500px;
+    max-width: 540px;
   }
 }
 
@@ -637,13 +637,13 @@ progress {
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 900px;
+    max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1088px;
+    max-width: 1140px;
   }
 }
 
@@ -11475,13 +11475,6 @@ fieldset:disabled .btn {
   }
 }
 
-body {
-  font-family: 'Noto Sans TC', sans-serif;
-  max-width: 1366px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .font-wendy {
   font-family: 'Wendy One', sans-serif;
 }
@@ -11504,80 +11497,117 @@ h1, .h1 {
   cursor: pointer;
 }
 
-.neg-index {
-  z-index: -1;
-}
-
 .mb-max {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .mb-max {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 }
 
 .top-btn {
   position: fixed;
-  right: 48px;
-  top: 500px;
   z-index: 3;
-  width: 70px;
-  height: 70px;
-  padding: 20px 10px;
+  right: 16px;
+  top: 600px;
+  width: 50px;
+  height: 50px;
+  padding: 15px 0px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
   .top-btn {
-    right: 16px;
     top: 900px;
-    width: 50px;
-    height: 50px;
-    padding: 15px 0px;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 768px) {
   .top-btn {
-    right: 16px;
-    top: 600px;
-    width: 50px;
-    height: 50px;
-    padding: 15px 0px;
+    right: 48px;
+    top: 500px;
+    width: 70px;
+    height: 70px;
+    padding: 20px 10px;
   }
 }
 
-.home-bg {
-  background: url(../images/bg_home.svg) no-repeat;
-  width: 851px;
-  height: 768px;
-  position: absolute;
-  top: 0;
-  right: 0;
+.index-bg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg_home_sm.svg);
+  background-position: 50% 400px;
+  background-size: 334px;
 }
 
-@media (max-width: 576px) {
-  .home-bg {
-    background: url(../images/bg_home_sm.svg) no-repeat;
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    top: 400px;
-    left: 10px;
-    right: 10px;
+@media (min-width: 576px) {
+  .index-bg {
+    background-image: url(../images/bg_home.svg);
+    background-position: right top;
+    background-size: 851px;
   }
 }
 
-@media (max-width: 400px) {
-  .home-bg {
-    background: url(../images/bg_home_sm.svg) no-repeat;
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    top: 350px;
-    left: 10px;
-    right: 10px;
+.bg-img-lg {
+  background-repeat: no-repeat;
+  background-image: url(../images/ball01.svg);
+  background-position: -28% 15px;
+  background-size: 126px;
+}
+
+@media (min-width: 576px) {
+  .bg-img-lg {
+    background-position: -18% 15px;
+    background-size: 180px;
+  }
+}
+
+@media (min-width: 900px) {
+  .bg-img-lg {
+    background-position: -30% 0px;
+    background-size: 330px;
+  }
+}
+
+.bg-img-md {
+  background-repeat: no-repeat;
+  background-image: url(../images/ball02.svg);
+  background-position: 110% 1650px;
+  background-size: 135px;
+}
+
+@media (min-width: 576px) {
+  .bg-img-md {
+    background-position: 110% 650px;
+    background-size: 315px;
+  }
+}
+
+@media (min-width: 900px) {
+  .bg-img-md {
+    background-position: 110% 230px;
+    background-size: 300px;
+  }
+}
+
+.bg-img-min {
+  background-repeat: no-repeat;
+  background-image: url(../images/ball03.svg);
+  background-position: -15% 0px;
+  background-size: 155px;
+}
+
+@media (min-width: 576px) {
+  .bg-img-min {
+    background-size: 315px;
+  }
+}
+
+@media (min-width: 900px) {
+  .bg-img-min {
+    background-position: 3% 20px;
+    background-size: 155px;
   }
 }
 
@@ -11592,139 +11622,97 @@ h1, .h1 {
   position: absolute;
   top: -50px;
   left: 32px;
+  z-index: 5;
 }
 
 .footer-banner {
-  height: 503px;
+  height: 461px;
+  background-repeat: no-repeat;
+  background-image: url(../images/footer_sm.svg);
+  background-position: top;
+  background-size: contain;
 }
 
-@media (max-width: 576px) {
+.footer-banner p {
+  margin-bottom: 24px;
+  font-size: 23.5px;
+}
+
+@media (min-width: 768px) {
   .footer-banner {
-    height: 461px;
+    background-repeat: repeat-x;
+    height: 503px;
+    background-image: url(../images/home_footer.svg);
   }
-}
-
-.bg-decorate-lg {
-  background: url(../images/ball01.svg) no-repeat;
-  width: 365px;
-  height: 366px;
-  top: -10px;
-  -webkit-transform: translateX(-350px);
-          transform: translateX(-350px);
-}
-
-@media (max-width: 576px) {
-  .bg-decorate-lg {
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
-  }
-}
-
-@media (max-width: 400px) {
-  .bg-decorate-lg {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
-  }
-}
-
-.bg-decorate-md {
-  background: url(../images/ball02.svg) no-repeat;
-  width: 315px;
-  height: 320px;
-  bottom: -20px;
-  right: -120px;
-}
-
-.bg-decorate-sm {
-  background: url(../images/ball03.svg) no-repeat;
-  width: 155px;
-  height: 155px;
-  top: 20px;
-  -webkit-transform: translateX(-90px);
-          transform: translateX(-90px);
-}
-
-.charge-title {
-  margin-bottom: 280px;
-}
-
-@media (max-width: 576px) {
-  .charge-title {
-    margin-bottom: 420px;
-  }
-}
-
-.round-bg {
-  background-color: #F7F9FD;
-  border-radius: 0 0 0 300px;
-  width: 1366px;
-  height: 470px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -5;
-}
-
-@media (max-width: 768px) {
-  .round-bg {
-    width: 768px;
-    height: 495px;
-    top: 0;
-  }
-}
-
-@media (max-width: 576px) {
-  .round-bg {
-    width: 576px;
-    height: 495px;
-    top: 88px;
+  .footer-banner p {
+    margin-bottom: 48px;
+    font-size: 32px;
   }
 }
 
 .charge-bg {
-  background: url(../images/banner.svg) no-repeat;
-  width: 885px;
-  height: 559px;
+  background-repeat: no-repeat;
+  background-image: url(../images/banner_sm.svg);
+  background-position: right 88px;
+  background-size: 375px;
+}
+
+.charge-bg::after {
+  content: '';
   position: absolute;
-  top: 0;
+  background-color: #F7F9FD;
+  border-radius: 0 0 0 250px;
+  width: 100%;
+  height: 495px;
+  top: 88px;
   right: 0;
-  z-index: -1;
+  z-index: -3;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 400px) {
   .charge-bg {
-    background: url(../images/banner_sm.svg) no-repeat;
-    width: 375px;
-    height: 495px;
-    position: absolute;
-    top: 88px;
-    left: 0;
-    right: 0;
+    background-size: contain;
+  }
+  .charge-bg::after {
+    border-radius: 0 0 0 300px;
+    height: 470px;
   }
 }
 
-.bg-decorate {
-  background: url(../images/ball03.svg) no-repeat;
-  width: 360px;
-  height: 360px;
-  top: 20px;
-  -webkit-transform: translateX(-250px);
-          transform: translateX(-250px);
-}
-
-@media (max-width: 768px) {
-  .bg-decorate {
-    top: 350px;
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
+@media (min-width: 576px) {
+  .charge-bg {
+    background-image: url(../images/banner.svg);
+    background-position: right top;
+  }
+  .charge-bg::after {
+    top: 0;
   }
 }
 
-.charge-btn:hover {
+@media (min-width: 768px) {
+  .charge-bg {
+    background-size: 885px;
+  }
+}
+
+.bg-img-sm {
+  background-repeat: no-repeat;
+  background-image: url(../images/ball03.svg);
+  background-position: -5% 450px;
+  background-size: 160px;
+}
+
+@media (min-width: 768px) {
+  .bg-img-sm {
+    background-position: -5% 150px;
+  }
+}
+
+.plan-btn-item:hover {
   color: white;
 }
 
-.charge-btn.active {
+.plan-btn-item.active {
   color: white;
 }
 /*# sourceMappingURL=all.css.map */

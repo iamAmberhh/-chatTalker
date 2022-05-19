@@ -20,7 +20,7 @@
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 500px;
+    max-width: 540px;
   }
 }
 
@@ -32,13 +32,13 @@
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 900px;
+    max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1088px;
+    max-width: 1140px;
   }
 }
 
