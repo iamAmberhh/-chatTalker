@@ -8,26 +8,31 @@ $(document).ready(function () {
 
   const plan = [
     {
+      btnName:"10000位",
       member: "10000",
       basic: 600,
       standard: 1600
     },
     {
+      btnName:"15000位",
       member: "15000",
       basic: 500,
       standard: 1500
     },
     {
+      btnName:"20000位",
       member: "20000",
       basic: 400,
       standard: 1400
     },
     {
+      btnName:"25000位",
       member: "25000",
       basic: 300,
       standard: 1300
     },
     {
+      btnName:">25000位",
       member: ">25000",
       basic: 100,
       standard: 1200
@@ -42,7 +47,7 @@ $(document).ready(function () {
   planBtn.addEventListener("click", function (e) {
     e.preventDefault();
     plan.forEach(function (item, index) {
-      if (e.target.id == item.member) {
+      if (e.target.textContent == item.btnName) {
         member[0].textContent = `${item.member}`;
         member[1].textContent = `${item.member}`;
         basic.textContent = `${item.basic}`;
